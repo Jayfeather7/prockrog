@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Опрос</title>
+</head>
+
+
+<body>
+    <h1 align="center">Опрос</h1>
+    <form action="http://g06u33.nn2000.info/cgi-bin/form_action.py" method='get' target='_self'>
+        <p>Имя: <input type="Text" name="name" value="-" size=8></p>
+        <p>Образовательная программа: <input type="Text" name="edu" value="0" size=8></p>
+        <p>Кампус:
+            <input type="Radio" name="place" value="Moscow" checked>Москва
+            <input type="Radio" name="place" value="Nizhny">Нижний
+			<input type="Radio" name="place" value="SPb">Санкт-Петербург
+			<input type="Radio" name="place" value="Perm">Пермь
+        </p>
+        
+        <p>Курс:
+            <input type="Checkbox" name="study_year" value="1">Первый
+            <input type="Checkbox" name="study_year" value="2">Второй
+            <input type="Checkbox" name="study_year" value="3">Третий
+			<input type="Checkbox" name="study_year" value="4">Четвёртый
+			
+        </p>
+        <p>Академическая мобильность
+            <select name="mobile">
+        <option value="Планирую поехать">Планирую поехать</option>
+		<option value="Рассматриваю варианты">Рассматриваю варианты</option>
+		<option value="Не интересует">Не интересует</option>	
+        </select>
+        </p>
+        <p> Дополнительная информация:
+            <br>
+            <textarea name="textarea" rows=4 cols=80>Дополнительно</textarea>
+        </p>
+        <p>Пароль: <input type="Password" name="password" value="" size=9></p>
+        <!--Все нижерасположенные фрагменты перемещать нельзя, редактировать можно-->
+        <p>Название файла: <input type="Техт" name="000_file_name" value="-">
+            <br>Тип записи в файл:<select name="010_mode">
+        <OPTION value="a">a - записать в файл</OPTION> 
+        <OPTION value="w">w - очисить файл и записать в файл</OPTION> 
+        </select>
+            <input type="hidden" name="function" value="page">
+            <input type="hidden" name="page_id" value="3"></p>
+        <p> <input type="Reset" name="Reset" value="Обновить">
+            <input type="Submit" name="submit" value="Отправить">
+        </p>
+    </form>
+</body>
